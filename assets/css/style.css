@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #044f7e;
+  background-image: url("../img/blue-bcg.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+#logo {
+  margin: 15px 10px;
+}
