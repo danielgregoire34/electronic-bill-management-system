@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #044f7e;
+  --green: #aebf2a;
+  --red: #8c2020;
+  --darkgrey: #363636;
+  --lightgrey: #979595;
+}
+
+body {
+  background-color: var(--blue);
+  background-image: url("../img/blue-bcg.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+#logo {
+  margin: 15px 10px;
+  height: 100px;
+  width: auto;
+}
+
+.row {
+  color: white;
+  font-weight: bold;
+}
+
+.login-btn {
+  width: 90px;
+  background-color: var(--lightgrey);
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.login-btn:hover {
+  background-color: var(--green);
+}
+
+#register {
+  margin: auto;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#register:hover {
+  color: var(--green);
+  text-shadow: 2px 2px 5px rgb(27, 27, 27);
+}
