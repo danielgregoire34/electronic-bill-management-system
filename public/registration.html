@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMS Application</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- HEADER  -->
+
+    <header class="container bg-secondary">
+      <nav>
+        <div class="row col-4 justify-content-start">
+          <img id="logo" src="./assets/img/logo v2.png" alt="SMS Logo" />
+        </div>
+        <div class="row col-8">
+          <div class="col">
+            <a href="./dashboard.html">DASHBOARD</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- LOGIN AND REGISTRATION -->
+    <div class="container container-sm container-md container-lg container-xl">
+      <!-- first name -->
+      <div class="row g-4">
+        <div class="col-8 offset-2 p-3">
+          <label for="fName" class="form-label">First Name:</label>
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            id="fName"
+            placeholder="John"
+          />
+        </div>
+      </div>
+
+      <!-- last name -->
+      <div class="row g-4">
+        <div class="col-8 offset-2 p-3">
+          <label for="lName" class="form-label">Last Name:</label>
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            id="lName"
+            placeholder="Doe"
+          />
+        </div>
+      </div>
+
+      <!-- email address -->
+      <div class="row g-4">
+        <div class="col-8 offset-2 p-3">
+          <label for="email" class="form-label">Email Adress:</label>
+          <input
+            type="email"
+            class="form-control form-control-sm"
+            id="email"
+            placeholder="name@example.com"
+          />
+        </div>
+      </div>
+
+      <!-- password -->
+      <div class="row g-4">
+        <div class="col-8 offset-2 p-3">
+          <label for="password" class="form-label">Password:</label>
+          <input
+            type="password"
+            class="form-control form-control-sm"
+            id="password"
+            placeholder="8-12 Characters min"
+          />
+        </div>
+      </div>
+      <!-- Login button -->
+      <div class="container text-center p-4">
+        <div class="col-auto">
+          <button type="submit" class="col-6 login-btn">SUBMIT</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS LINKS -->
+    <script src="./assets/script/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
