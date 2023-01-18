@@ -16,23 +16,33 @@
   <body>
     <!-- HEADER  -->
 
-    <header class="container bg-secondary">
-      <nav>
-        <div class="row col-4 justify-content-start">
-          <img id="logo" src="./assets/img/logo v2.png" alt="SMS Logo" />
-        </div>
-        <div class="row col-8">
-          <div class="col">
-            <a href="./dashboard.html">DASHBOARD</a>
-          </div>
+    <header>
+      <!-- Top Navigation Menu -->
+      <nav class="navbar">
+        <img id="logo" src="./assets/img/logo v2.png" alt="SMS logo" />
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="./dashboard.html" class="nav-link">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a href="./new-account.html" class="nav-link">New Account</a>
+          </li>
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Log Out</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
       </nav>
     </header>
 
     <!-- LOGIN AND REGISTRATION -->
-    <div class="container container-sm container-md container-lg container-xl">
+    <div class="container my-4">
       <!-- first name -->
-      <div class="row g-4">
+      <div class="row g-4 registration">
         <div class="col-8 offset-2 p-3">
           <label for="fName" class="form-label">First Name:</label>
           <input
@@ -45,7 +55,7 @@
       </div>
 
       <!-- last name -->
-      <div class="row g-4">
+      <div class="row g-4 registration">
         <div class="col-8 offset-2 p-3">
           <label for="lName" class="form-label">Last Name:</label>
           <input
@@ -58,7 +68,7 @@
       </div>
 
       <!-- email address -->
-      <div class="row g-4">
+      <div class="row g-4 registration">
         <div class="col-8 offset-2 p-3">
           <label for="email" class="form-label">Email Adress:</label>
           <input
@@ -71,7 +81,7 @@
       </div>
 
       <!-- password -->
-      <div class="row g-4">
+      <div class="row g-4 registration">
         <div class="col-8 offset-2 p-3">
           <label for="password" class="form-label">Password:</label>
           <input
