@@ -86,7 +86,6 @@ li {
 li:hover {
   color: greenyellow;
 }
-
 .navbar {
   min-height: 70px;
   display: flex;
@@ -138,14 +137,45 @@ li:hover {
   top: 100px;
   gap: 0;
   flex-direction: column;
-  background-color: rgba(4, 78, 124, 5);
+  background-color: rgb(1, 41, 66);
   width: 100%;
   text-align: center;
   transition: 0.3s;
+  font-weight: bold;
 }
 li {
   margin: 16px 0;
 }
 .nav-menu.active {
   left: 0;
+}
+
+/* DASHBOARD */
+
+.page-h2 {
+  background-color: var(--red);
+  color: white;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+#graphic {
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+.accountbtn {
+  background-color: white;
+  margin: 10px 5px;
+  padding: 5px;
+}
+.accountbtn:hover {
+  background-color: var(--green);
+}
+.accountbtn a:visited {
+  color: black;
+}
+
+.accountbtn a {
+  text-decoration: none;
 }
