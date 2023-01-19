@@ -20,14 +20,23 @@ body {
 }
 
 #logo {
-  margin: 15px 10px;
-  height: 100px;
+  margin-left: 30px;
+
+  height: 90px;
   width: auto;
 }
 
 .row {
-  color: white;
+  color: rgb(75, 74, 74);
   font-weight: bold;
+}
+
+.login {
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  margin-top: 80px;
+  box-shadow: 5px 5px 8px var(--darkgrey);
 }
 
 .login-btn {
@@ -51,4 +60,92 @@ body {
 #register:hover {
   color: var(--green);
   text-shadow: 2px 2px 5px rgb(27, 27, 27);
+}
+
+.registration {
+  color: white;
+}
+/****************************
+Style the navigation menu
+ 
+ **************************** */
+
+nav {
+  border-bottom: 5px solid yellowgreen;
+  box-shadow: 0 3px 9px rgb(63, 63, 63);
+}
+
+header {
+  background-color: var(--darkgrey);
+}
+li {
+  color: white;
+  list-style: none;
+  transition: 0.7s ease;
+}
+li:hover {
+  color: greenyellow;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24 px;
+  max-height: 100px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+/* @media screen and (min-width: 768px) { */
+.hamburger {
+  display: block;
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+  position: fixed;
+  left: -1000%;
+  top: 100px;
+  gap: 0;
+  flex-direction: column;
+  background-color: rgba(4, 78, 124, 5);
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+li {
+  margin: 16px 0;
+}
+.nav-menu.active {
+  left: 0;
 }
