@@ -179,3 +179,7 @@ li {
 .accountbtn a {
   text-decoration: none;
 }
+.newAccount {
+  background-color: var(--lightgrey);
+  height: 50px;
+}
