@@ -9,6 +9,7 @@ class User extends Model {
     }
   }
 
+// separated the user information from the subscription info on this user.js and the account.js
   User.init(
     {
       id: {
@@ -16,7 +17,11 @@ class User extends Model {
         allowNull: false,
         autoIncrement: true,
       },
-      name: {
+      first_name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      last_name: {
         type: DataTypes.STRING,
         allowNull: false,
       },
@@ -33,9 +38,16 @@ class User extends Model {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          len: [8],
+          len: [25],
         },
       },
+      phone: {
+        type: DataTypes.STRING,
+        allowNull: false, 
+        validate: {
+          len: [15]
+        },
+    },
     },
     {
       hooks: {
