@@ -38,12 +38,12 @@
     </header>
 
     <!-- MAIN-->
-
+<form id="form">
     <div class="row text-center my-3">
-      <h2 class="page-h2">CREATE NEW ACCOUNT</h2>
+      <h2 class="page-h2">CREATE NEW SUBSCRIPTION</h2>
     </div>
 
-    <div class="container my-4">
+    <div class="container my-4" id="subscriptionForm">
       <!-- ACCOUNT NAME -->
       <div class="row g-4 registration">
         <div class="col-8 offset-2 p-3">
@@ -53,6 +53,7 @@
             class="form-control form-control-sm"
             id="accountName"
             placeholder="Netflix"
+            name="serialNumber"
           />
         </div>
       </div>
@@ -88,14 +89,46 @@
       </div>
 
       <!-- SUBMIT BUTTON -->
-      <div class="container text-center p-4">
-        <div class="col-auto">
-          <button id="createAccBtn" type="submit" class="col-6 login-btn">
-            SUBMIT
-          </button>
+        <div id="createAccBtn" class="container text-center p-4">
+          <div class="col-auto">
+            <button type = "submit" id="sub-Submit" name="serialNumber" href="./new-account.html" class="col-6 login-btn">
+              SUBMIT
+            
+        
+    <script>
+
+      const form = document.getElementById('form');
+      const name = document.getElementById('accountName');
+      const ammount = document.getElementById('amount');
+      form.addEventListener('submit',function(e){
+        e.preventDefault();
+
+        const nameValue = name.value;
+        const ammountValue = ammount.value;
+
+        localStorage.setItem('account-Name',nameValue);
+        localStorage.setItem('ammount-Num',ammount);
+        var ul = document.getElementById('lang');
+        var li = document.createElement('li');
+        var text = document.createTextNode('jQuery');
+        li.appendChild(text);
+        ul.appendChild(li);
+
+      })
+
+      document.getElementById("sub-Submit").addEventListener("click", myFunction);
+      function myFunction() {
+        window.location.href="./dashboard.html";
+      }
+    </script>
+          
+
+          </div>
         </div>
-      </div>
     </div>
+
+  </form>
+
 
     <!-- FOOTER -->
     <footer>
