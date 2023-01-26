@@ -10,4 +10,6 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
 }))
+window.alert('testing javescript file');
 
+console.log("testing this file of JS");
