@@ -1,0 +1,32 @@
+[
+    {
+        "account_name": "Spotify",
+        "description": "spotify subscription",
+        "due_date": "02-21-2023",
+        "price": "$7.00"
+    },
+    {
+        "account_name": "Netflix",
+        "description": "netflix subscription",
+        "due_date": "02-14-2023",
+        "price": "$15.00"
+    },
+    {
+        "account_name": "HBO Max",
+        "description": "HBO subscription",
+        "due_date": "02-19-2023",
+        "price": "$16.00"
+    },
+    {
+        "account_name": "Prime Video",
+        "description": "Prime subscription",
+        "due_date": "02-25-2023",
+        "price": "$9.00"    
+    },
+    {
+        "account_name": "Disney plus",
+        "description": "Disney+ subscription",
+        "due_date": "02-27-2023",
+        "price": "$10.00"    
+    }
+]

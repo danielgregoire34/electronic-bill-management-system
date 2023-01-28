@@ -1,17 +1,23 @@
 [
     {
-      "name": "Sal",
+      "first_name": "Sal",
+      "last_name":"Gonzalez",
       "email": "sal@hotmail.com",
-      "password": "password12345"
+      "password": "password12345",
+      "phone": "3211456876"
     },
     {
-      "name": "Lernantino",
+      "first_name": "Lernantino",
+      "last_name": "Suarez",
       "email": "lernantino@gmail.com",
-      "password": "password12345"
+      "password": "password12345",
+      "phone": "3211451735"
     },
     {
-      "name": "Amiko",
+      "first_name": "Amiko",
+      "last_name": "Shimizu",
       "email": "amiko2k20@aol.com",
-      "password": "password12345"
+      "password": "password12345",
+      "phone": "4074322277"
     }
   ]
