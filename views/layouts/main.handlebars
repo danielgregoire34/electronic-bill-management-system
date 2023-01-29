@@ -36,7 +36,17 @@
         </div>
       </nav>
     </header>
+
+<body>
+  {{#if logged_in}}
+<a href="/dashboard">dashbaord</a>
+{{else}}
+<a href="/login">login</a>
+{{/if}}
+</body>
+
     {{{body}}}
+
 
     <!-- FOOTER -->
     <footer>
