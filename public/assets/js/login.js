@@ -1,3 +1,5 @@
+// this is the js for the login page with the register button
+
 const loginFormHandler = async (event) => {
     event.preventDefault();
   
