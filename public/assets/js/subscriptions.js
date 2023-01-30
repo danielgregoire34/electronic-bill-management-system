@@ -8,7 +8,7 @@ const newFormHandler = async (event) => {
     const dueDate = document.querySelector('#dueDate')
 
     if (name && amount && dueDate) {
-    const response = await fetch(`/api/projects`, {
+    const response = await fetch(`/api/acccounts`, {
         method: 'POST',
         body: JSON.stringify({ name, amount, dueDate }),
         headers: {
@@ -17,7 +17,7 @@ const newFormHandler = async (event) => {
     });
 
     if (response.ok) {
-        document.location.replace('/profile');
+        document.location.replace('/dashboard');
     } else {
         alert('Failed to create project');
     }
@@ -33,3 +33,5 @@ document
 // document
 //     .querySelector('.project-list')
 //     .addEventListener('click', delButtonHandler);
+
+

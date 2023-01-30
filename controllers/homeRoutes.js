@@ -1,9 +1,12 @@
 const router = require('express').Router();
-const { User } = require('../models');
+const { Account ,User } = require('../models');
 const withAuth = require('../utils/auth');
+
+
 //  TO GET LOGIN PAGE
 
 router.get('/',function(req,res){
+    
     try{
         res.render('login',{title: "Subscription Management Services"});
     } catch (err){
@@ -11,6 +14,8 @@ router.get('/',function(req,res){
     }
     
 });
+
+
 
 
 // TO REGISTRATION PAGE 
@@ -27,9 +32,15 @@ router.get('/registration',function(req,res){
 
 // TO GET DASHBOARD PAGE
 
+//const subName = document.querySelector('#accountName').value.trim();
+
+
 router.get('/dashboard',function(req,res){
+
     try{
-        res.render('dashboard',{title: "SMS: Dashboard"});
+        res.render('dashboard',{
+            stuff: 'Something Else',
+            title: "SMS: Dashboard"});
     } catch (err){
         res.status(500).json(err);
     }
@@ -54,12 +65,12 @@ router.get('/new-account',function(req,res){
 
 
 //auth middleware 
-router.get('/profile', withAuth, async(req,res)=>{
+router.get('/dashboard', withAuth, async(req,res)=>{
     try {
         // Find the logged in user based on the session ID
         const userData = await User.findByPk(req.session.user_id, {
         attributes: { exclude: ['password'] },
-        
+        include: [{model: Account}],
         });
     
         const user = userData.get({ plain: true });

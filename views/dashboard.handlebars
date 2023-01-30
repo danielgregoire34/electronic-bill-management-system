@@ -1,53 +1,13 @@
 <!-- MAIN  -->
 <main>
   <!-- CURRENT SUBSCRIPTIONS -->
-
-<div class="row mt-4">
-  <div class="col-md-6">
-    <h3>Create a New Account:</h3>
-
-    <form class="form new-project-form">
-      <div class="form-group">
-        <label for="account-name">account name:</label>
-        <input class="form-input" type="text" id="account-name" name="account-name" />
-      </div>
-      <div class="form-group">
-        <label for="account-desc">description:</label>
-        <textarea class="form-input" id="account-desc" name="account-desc"></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
-    </form>
-  </div>
-
-
-
   <div class="container-fluid">
     <div class="row text-center my-3">
       <h2 class="page-h2">CURRENT SUBSCRIPTIONS</h2>
     </div>
 
-
-  {{#if projects.length}}
-  <div class="col-md-6 account-list">
-    <h3>Current Account:</h3>
-
-    {{#each accounts as |account|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/subscription/{{account.id}}">{{account.name}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{account.id}}">DELETE</button>
-      </div>
-    </div>
-    {{/each}}
-  </div>
-  {{/if}}
-
-
-    <div class="newAccount"></div>
+  <ul id="sub-list"></ul>
+    <!--<div class="newAccount"></div>-->
   
     <!-- SUBSCRIPTIONS GRAPHICS -->
     <!-- <div class="row justify-content-center">
@@ -58,17 +18,19 @@
 
     <!-- ACCOUNTS -->
     <div class="row text-center">
-      <h2 class="page-h2">ACCOUNTS</h2>
+      <h2 class="page-h2">SUBSCRIPTIONS</h2>
+
+  
       
       <!--  CREATE AND DELETE ACCOUNT BUTTONS -->
       <div id="newAccBtn" class="col accountbtn">
-        <a href="./new-account" class="nav-link">New Account</a>
+        <a href="./new-account" class="nav-link">New Subscription</a>
       </div>
-      <div id="deleteAccBtn" class="col accountbtn">DELETE ACCOUNT</div>
+      <div id="deleteAccBtn" class="col accountbtn">DELETE SUBSCRIPTION</div>
     </div>
 
     <div class="row accounts"></div>
-    <script src="assets/js/account.js"></script>
+<script src="../public/assets/js/subscriptions.js"></script>
   </div>
 </main>
 
