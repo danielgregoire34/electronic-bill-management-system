@@ -1,11 +1,12 @@
 {
   "name": "electronic-bill-management-system",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000E\u0000l\u0000e\u0000c\u0000t\u0000r\u0000o\u0000n\u0000i\u0000c\u0000 \u0000B\u0000i\u0000l\u0000l\u0000 \u0000M\u0000a\u0000n\u0000a\u0000g\u0000e\u0000m\u0000e\u0000n\u0000t\u0000 \u0000S\u0000y\u0000s\u0000t\u0000e\u0000m\u0000\r\u0000 \u0000",
+  "description": " electronic bill management system",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "seeds": "node seeds/seeds.js"
+    "seeds": "node seeds/seeds.js",
+    "start": "concurrently \"npm run seeds\" \"node server.js\" "
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "stripe": "^11.8.0"
   },
   "devDependencies": {
+    "concurrently": "^7.6.0",
     "nodemon": "^2.0.20"
   }
 }
